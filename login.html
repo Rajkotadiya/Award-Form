@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Event Registration
+            Dashboard Login
         </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha3104-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ7104/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/login.css">
@@ -12,7 +12,7 @@
     <body>
         
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a href="https://rru.ac.in/" class="navbar-brand">SITAICS</a>
+            <a href="https://rru.ac.in/" class="navbar-brand" target="_blank">SITAICS</a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -27,41 +27,26 @@
             
         </nav>
           
-        <div class="main_container">
-            <div class="login">
-                
-                <div class="heading">
-                    <p>Login</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-6">
+                    <form action="dashboard.html" method="POST" class="form-block">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" required placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
                 </div>
-                
-                <div class="Username">
-                    <!--<div>
-                        <span>Username:</span>
-                    </div>-->
-                    <div>
-                        <input type="text" id="Username" required placeholder="Username">
-                    </div>
-                </div>
-
-                <div class="password">
-                    <!--<div>
-                        <span>Password:</span>
-                    </div>-->
-                    <div>
-                        <input type="password" id="Password" required placeholder="Password">
-                    </div>
-                </div>
-
-                <div class="button">
-                    <button type="submit">Submit</button>
-                </div>
-                
             </div>
-            
         </div>
     </body>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha3104-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha3104-q10i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+10abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha3104-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF106dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </html>
