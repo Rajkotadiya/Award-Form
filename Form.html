@@ -28,32 +28,32 @@
 
         <div class="header">Event Registration Form</div>
         <div class="container">
-            <form action="POST">
+            <form class = 'formOff' action="POST">
                 <div class="data">
                     <div class="row enrollment_no">
                         <div class="col-md-2 in_text">Enrollment No<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="rollno" required placeholder="RSU0123456"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="rollno" name='rollno'  placeholder="RSU0123456"></div>
                     </div>
     
                     <div class="row student_fname">
                         <div class="col-md-2 in_text">First Name<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="student_fname" required placeholder="First Name"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="student_fname" name="student_fname"  placeholder="First Name"></div>
                     </div>
     
                     <div class="row student_lname">
                         <div class="col-md-2 in_text">Last Name<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="student_lname" required placeholder="Last Name"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="student_lname" name='student_lname'  placeholder="Last Name"></div>
                     </div>
     
                     <div class="row student_email">
                         <div class="col-md-2 in_text">Email id<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="email" required placeholder="example@mail.com"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="email" name="email"  placeholder="example@mail.com"></div>
                     </div>
     
                     <div class="row student_gender">
                         <div class="col-md-2 in_text">Gender<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="gender_option" class="select-css" required >
+                            <select id="gender_option" class="select-css" name='gender_option' >
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value="female">Female</option>
                                 <option value="male">Male</option>
@@ -65,7 +65,7 @@
                     <div class="row school_name">
                         <div class="col-md-2 in_text">School Name<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="gender_option" class="select-css" required >
+                            <select id="school_name" class="select-css" name="school_name"   >
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value="SITAICS">SITAICS</option>
                                 <option value="SISPA">SISPA</option>
@@ -84,7 +84,7 @@
                     <div class="row student_course_name">
                         <div class="col-md-2 in_text">Course Name<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="gender_option" class="select-css" required >
+                            <select id="course_name" class="select-css" name="course_name"  >
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value=""></option>
                                 <option value=""></option>
@@ -96,7 +96,7 @@
                     <div class="row student_semester">
                         <div class="col-md-2 in_text">Semester<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="sem_option" class="select-css" required >
+                            <select id="sem_option" class="select-css" name="sem_option"   >
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value="I">I</option>
                                 <option value="II">II</option>
@@ -112,18 +112,18 @@
     
                     <div class="row event_name">
                         <div class="col-md-2 in_text">Event Name<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="event_name" required placeholder="e.g. Web development"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="event_name" name="event_name"  placeholder="e.g. Web development"></div>
                     </div>
     
                     <div class="row event_type">
                         <div class="col-md-2 in_text">Event Type<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="text" id="event_type" required placeholder="e.g. Webinar"></div>
+                        <div class="col-md-10 in_user"><input type="text" id="event_type" name="event_type"  placeholder="e.g. Webinar"></div>
                     </div>
     
                     <div class="row event_level">
                         <div class="col-md-2 in_text">Event Level<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="event_level" class="select-css" required >
+                            <select id="event_level" class="select-css" name="event_level">
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value="University">University</option>
                                 <option value="District">District</option>
@@ -137,7 +137,7 @@
                     <div class="row event_rank">
                         <div class="col-md-2 in_text">Rank<sup>*</sup>:</div>
                         <div class="col-md-10 in_user">
-                            <select id="rank_option" class="select-css" required >
+                            <select id="rank_option" class="select-css" name="rank_option">
                                 <option value="default" selected hidden disabled>Select</option>
                                 <option value="1">1st</option>
                                 <option value="2">2nd</option>
@@ -149,12 +149,12 @@
     
                     <div class="row event_date">
                         <div class="col-md-2 in_text">Date<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="date" id="event_date" required></div>
+                        <div class="col-md-10 in_user"><input type="date" id="event_date" name="event_date" ></div>
                     </div>
     
                     <div class="row proof">
                         <div class="col-md-2 in_text">Upload File<sup>*</sup>:</div>
-                        <div class="col-md-10 in_user"><input type="file" id="proof" required></div>
+                        <div class="col-md-10 in_user"><input type="file" id="proof" name="proof"  ></div>
                     </div>
     
                     <div class="button">
@@ -163,8 +163,9 @@
                 </div>
             </form>
         </div>
+        
     </body>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/form.js"></script>
 </html>
